@@ -1,0 +1,262 @@
+/* Quitar los margenes por defecto de los elementos*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Quitar los subrayados de los hipervinculos*/
+a{
+    text-decoration: none;
+}
+/*Flexbox para el logo y el nav del header*/
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(184, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerLogo{
+    width: 100px;
+    margin-left: 20px;
+}
+.headerLogo img {
+    width: 100%;
+}
+.headerMenu{
+    width: 40%;
+    margin-right: 20px;
+}
+.headerMenu ul li a{
+    color: black;
+}
+.headerMenu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.headerMenu ul li{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    /*text-align: center;
+    text-decoration: none;*/
+    display: inline;
+}
+
+.estilo_titulares{
+    color:blue;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background-color: lightcoral;
+}
+
+.estilo_titulares_secundarios{
+    color: maroon;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+table {
+    border: 1px solid indigo;
+}
+th {
+    border: 1px solid blue;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+
+}
+td {
+    border: 1px solid black;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    text-align: justify;
+}
+
+/*Europa*/
+
+#Europa__grilla{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 150px 150px;
+    grid-template-areas:    "Venecia Venecia Paris"
+                            "Venecia Venecia Roma";
+}
+#Europa__imagenUno{
+    grid-area: Venecia;
+}
+#Europa__imagenUno img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#Europa__imagenDos{
+    grid-area: Paris;
+}
+#Europa__imagenDos img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#Europa__imagenTres{
+    grid-area: Roma;
+}
+#Europa__imagenTres img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+/*Africa*/
+
+#Africa__grilla{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 150px 150px;
+    grid-template-areas:    "Egipto Egipto Gorilas Gorilas"
+                            "Kilimanjaro Kilimanjaro Gorilas Gorilas";
+}
+#Africa__imagenUno{
+    grid-area: Egipto;
+}
+#Africa__imagenUno img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#Africa__imagenDos{
+    grid-area: Gorilas;
+}
+#Africa__imagenDos img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#Africa__imagenTres{
+    grid-area: Kilimanjaro;
+}
+#Africa__imagenTres img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*America*/
+
+#America__grilla{
+    display: grid;
+    grid-template-columns: 49% 49% ;
+    grid-template-rows: 350px 350px;
+    grid-template-areas:    "Argentina Mexico"
+                            "Ecuador _Peru";
+}
+#America__imagenUno{
+    grid-area: Argentina;
+}
+#America__imagenUno img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#America__imagenDos{
+    grid-area: Mexico;
+}
+#America__imagenDos img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#America__imagenTres{
+    grid-area: Ecuador;
+}
+#America__imagenTres img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#America__imagenCuatro{
+    grid-area: _Peru;
+}
+#America__imagenCuatro img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*Asia*/
+
+#Asia__grilla{
+    display: grid;
+    grid-template-columns: 49% 49% ;
+    grid-template-rows: 350px 350px;
+    grid-template-areas:    "China Jordania"
+                            "India Japon";
+}
+#Asia__imagenUno{
+    grid-area: China;
+}
+#Asia__imagenUno img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#Asia__imagenDos{
+    grid-area: Jordania;
+}
+#Asia__imagenDos img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#Asia__imagenTres{
+    grid-area: India;
+}
+#Asia__imagenTres img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#Asia__imagenCuatro{
+    grid-area: Japon;
+}
+#Asia__imagenCuatro img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+/*Oceania*/
+
+#Oceania__grilla{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 250px 250px;
+    grid-template-areas:    "New_Zeland New_Zeland Sidney Sidney"
+                            "New_Zeland New_Zeland Pascua Pascua";
+}
+#Oceania__imagenUno{
+    grid-area: New_Zeland;
+}
+#Oceania__imagenUno img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#Oceania__imagenDos{
+    grid-area: Sidney;
+}
+#Oceania__imagenDos img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#Oceania__imagenTres{
+    grid-area: Pascua;
+}
+#Oceania__imagenTres img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}

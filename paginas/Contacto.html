@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="headerLogo">
+            <a href="../index.html"> <img src="https://seeklogo.com/images/R/rocket-logo-B848750683-seeklogo.com.png" alt="logo_rocket_travel"> </a>
+        </div>
+        <nav class="headerMenu">
+            <ul>
+                <li> <a href="../index.html">   Principal   </a>    </li>
+                <li> <a href="America.html">    América     </a>    </li>
+                <li> <a href="Africa.html">     África      </a>    </li>
+                <li> <a href="Asia.html">       Asia        </a>    </li>
+                <li> <a href="Oceania.html">    Oceania     </a>    </li>
+                <li> <a href="Europa.html">     Europa      </a>    </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Titulo Principal Web -->
+    <h1 class="estilo_titulares">ROCKET TRAVEL</h1>
+    <!-- Sección Linkeada -->
+    <h2 class="estilo_titulares_secundarios">Contacto</h2>
+    <main>
+        <!-- Formulario de contacto -->
+        <form action="" method="get">
+            <!-- Entradas de texto -->
+            <label for="nombre" > NOMBRE COMPLETO</label> <br>
+            <input type="text" name="nombrecompleto" id="nombre_apellido" placeholder="Pepito Perez"> <br>
+            <label for="email">EMAIL</label> <br>
+            <input type="email" name="email" id="email" placeholder="my-email@domain.com"> <br>
+            <br>
+            <!-- Menú desplegable -->
+            <label for="residencias">Escoja el país de su residencia</label>
+            <select name="residencias" id="residencias">
+                <option value="0">Seleccionar</option>
+                <option value="AR">Argentina</option>
+                <option value="BO">Bolivia</option>
+                <option value="BR">Brasil</option>
+                <option value="CL">Chile</option>
+                <option value="CO">Colombia</option>
+                <option value="EC">Ecuador</option>
+                <option value="MX">México</option>
+                <option value="UR">Uruguay</option>
+                <option value="BV">Venezuela</option>
+            </select>
+            <br><br>
+            <!--Checkbox-->
+            <label for="Aceptarcondiciones">¿Acepta Condiciones?</label>
+            <input type="checkbox" name="Aceptarcondiciones">
+            <br>
+            <!-- Text Area -->
+            <fieldset>
+                <legend>Descripción</legend>
+                <textarea name="descripcion" id="descripcion" cols="190" rows="5" placeholder="Ingrese su texto aquí"></textarea>
+            </fieldset> <br><br>
+            <!-- Botones de Envio y Reseteo -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </main>
+</body>
+</html>
