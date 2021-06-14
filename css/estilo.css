@@ -12,7 +12,8 @@ a{
 .header{
     width: 100%;
     height: 100px;
-    background-color: rgb(184, 230, 230);
+     /* background-color: rgb(184, 230, 230);  */
+     background-image: linear-gradient(to top,#b5ead7, #ADF7B6);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -259,4 +260,10 @@ td {
     max-width: 100%;
     width: 100%;
     height: 100%;
+}
+
+/*Transitions*/
+.headerMenu ul li:hover {
+    transition: 1s;
+    font-size: 2rem;
 }
